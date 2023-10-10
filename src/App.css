@@ -1,38 +1,588 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* this is the header section */
+.main-container{
+  width: 1200px;
+  margin: 0 auto;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+  background-color: gold;
+  padding: 15px 30px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-size: larger;
+  font-weight: 600;
+  color: snow;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button:hover{
+  background-color: aqua;
+}
+.header-container {
+  font-size: 20px;
+  height: 50px;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+}
+ul.menu-container {
+  display: flex;
+}
+.menu-container li {
+  margin-left: 15px;
+  list-style: none;
+  text-decoration: none !important;
+}
+.menu-container li a{
+  text-decoration: none;
+}
+.main{
+  background-color: aqua;
+}
+
+/* this is the body section */
+.content{
+  height: calc( 100% - 350px );
+  padding: 2em;
+  overflow-y: scroll;
+
+}
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Dancing Script', cursive;
+  font-size: 16px;
+  
+}
+/* this is the home section */
+.banner-container img{
+  width: 100%;
+}
+.pbanner-container {
+  position: relative;
+  z-index: 1;
+}
+.bannerContent {
+  position: absolute;
+  z-index: 9;
+  top: 10%;
+  left: 6%;
+  
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.bannerContent h1 {
+  font-family: unset;
+  font-size: xxx-large;
+}
+.bannerContent p {
+  font-family: math;
+  font-size: large;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.banner-container1 {
+  display: flex;
+  justify-content: space-between;
+  height: 220px !important;
+  margin: 20px 0px;
+}
+.banner-container2 {
+  display: flex;
+  justify-content: space-around;
+  padding: 25px;
+
+}
+.tomato {
+  display: flex;
+  background: #222831;
+  color: white;
+  padding: 20px;
+  width: 45%;
+}
+.tomato-img img {
+  width: 100%;
+  border-radius: 50%;
+  border: 5px solid #ffbe33;
+    vertical-align: middle;
+    border-style: none;
+}
+.tomato-img {
+  width: 165px;
+  height: 165px;
+  margin-right: 20px;
+}
+.urger-content h6 {
+  font-size: xxx-large;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+.tomato-content h6{
+  font-size: xxx-large;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px; 
+}
+.tomato-content h5 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 24px;
+  margin: 0;
+}
+.pizza-img img {
+  padding: 25px;
+  margin: -1px;
+  
+  width: 155px;
+  height: 144px;
+}
+.pizza-img {
+  
+  background: #f1f2f3;
+  justify-content: center;
+  height: 215px;
+  display: flex;
+  border-radius: 10px 10px 0 45px;
+}
+.pizza-content {
+  padding: 25px;
+  box-sizing: border-box;
+  
+  border-radius: 15px;
+  position: relative;
+  background-color: black;
+  color: white;
+}
+.pizza-container {
+  background: black;
+  border-radius: 15px;
+}
+.burgrr-container {
+  box-sizing: border-box;
+  
+  background: black;
+  border-radius: 15px;
+}
+.burger-img img {
+  
+  width: 155px;
+  height: 144px;
+  padding: 25px;
+  margin: -1px;
+  
+}
+.burger-img {
+  display: flex;
+  justify-content: center;
+  height: 215px;
+  background: #f1f2f3;
+  border-radius: 10px 10px 0 45px;
+}
+.burger-content {
+  padding: 25px;
+  position: relative;
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+}
+.pizza3-container {
+  
+ box-sizing: border-box;
+ background: black;
+ border-radius: 15px;
+}
+.pizza3-img img {
+  width: 155px;
+  height: 144px;
+  padding: 25px;
+  margin: -1px;
+}
+.pizza3-img {
+  display: flex;
+  justify-content: center;
+  background: #f1f2f3;
+  border-radius: 10px 10px 0 45px;
+ height: 215px;
+}
+
+.pizza3-content {
+  padding: 25px;
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+  position: relative;
+}
+.banner-container3 {
+  display: flex;
+  justify-content: space-around;
+  height: 416px;
+  padding: 25px;
+
+}
+.pasta-container {
+  position: relative;
+ 
+ 
+  background-color: black;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+.pasta-img img {
+  width: 155px;
+  height: 144px;
+}
+.pasta-img {
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+  background: #f1f2f3;
+  border-radius: 10px 10px 0 45px;
+}
+.pasta-content {
+  color: white;
+  padding: 25px;
+}
+.fries-img img {
+  width: 155px;
+  height: 144px;
+  
+}
+.fries-img {
+  display: flex;
+  justify-content: center;
+  background: #f1f2f3;
+  border-radius: 10px 10px 0 45px;
+  padding: 25px;
+}
+.fries-container {
+  background-color: black;
+  border-radius: 15px;
+}
+.fries-content {
+  color: white;
+  padding: 25px;
+}
+.pizza4-img img {
+  width: 155px;
+  height: 144px;
+}
+.pizza4-img {
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  background: #f1f2f3;
+  border-radius: 10px 10px 0 45px;
+}
+.pizza4-container {
+  background-color: black;
+  border-radius: 15px;
+}
+.pizza4-content {
+  color: white;
+  padding: 25px;
+}
+.banner-container4 {
+  display: flex;
+  justify-content: space-around;
+}
+.Burger-container {
+  background-color: black;
+ border-radius: 15px;
+ height: 416px;
+}
+.Burger-img img {
+
+  width: 150px;
+  height: 140px;
+  
+  
+}
+.Burger-img {
+  display: flex;
+  justify-content: center;
+  background: #f1f2f3;
+  border-radius: 10px 10px 0 45px;
+  padding: 25px;
+}
+.Burger-content {
+  color: white;
+  padding: 25px;
+}
+.Burger2-container {
+  background-color: black;
+  height: 416px;
+  border-radius: 15px;
+}
+.Burger2-img img {
+  width: 155px;
+  height: 144px;
+
+}
+.Burger2-img {
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+  margin: -1px;
+  border-radius: 10px 10px 0 45px;
+  background: #f1f2f3;
+}
+.Burger2-content {
+  color: white;
+  padding: 25px;
+}
+.pasta1-container {
+  background-color: black;
+  height: 416px;
+  border-radius: 15px;
+}
+.pasta1-img img {
+  width: 155px;
+  height: 144px;
+}
+.pasta1-img {
+  border-radius: 10px 10px 0 45px;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  background: #f1f2f3;
+}
+.pasta1-content {
+  color: white;
+  padding: 25px;
+}
+.banner-container4 {
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.banner-container5 {
+  background-color: black;
+  box-sizing: border-box;
+  display: flex;
+}
+.banner-img {
+  box-sizing: border-box;
+  padding: 75px;
+}
+.banner-img img {
+  width: 445px;
+  height: 550px;
+  padding: 10px;
+}
+.banner-content {
+  color: white;
+  padding-top: 200px;
+ 
+  margin: 38px;
+}
+
+.banner-content p {
+  font-family: system-ui;
+  font-size: large;
+}
+.text-map {
+  display: flex;
+  margin-top: 70px;
+  justify-content: space-around;
+}
+input.form-control {
+  width: 500px;
+  height: 40px;
+  margin: 0px 0px 25px;
+  padding: 5px 12px 5px 25px;
+  border-radius: 5px;
+  font-size: larger;
+  border: 1px solid gray;
+}
+
+.content-both {
+
+  height: 446px;
+  display: flex;
+  justify-content:space-around;
+  padding-top: 60px;
+}
+.about-both h1 {
+  text-align: center;
+}
+.about-girl {
+  width: 558px;
+  height: 356px;
+  
+}
+.about-boy {
+  width: 558px;
+  height: 356px;
+  
+}
+
+.about-boy img {
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  border: 8px solid;
+  color: goldenrod;
+
+}
+.about-girl img {
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  border: 8px solid;
+  color: goldenrod;
+  
+}
+.girl-content {
+  width: 555px;
+  height: 181px;
+  background-color: black;
+  border-radius: 5px;
+}
+.girl-content p {
+  color: white;
+  padding: 12px;
+  font-family: system-ui;
+}
+.boys-content {
+  width: 555px;
+  height: 181px;
+  background-color: black;
+  border-radius: 5px;
+}
+.boys-content p {
+  color: white;
+  padding: 12px;
+  font-family: system-ui;
+}
+.image1 {
+  padding-top: 20px;
+}
+.image2 {
+  padding-top: 20px;
+}
+.customer {
+  text-align: center;
+  font-size: larger;
+}
+.girl-content h3 {
+  color: white;
+  padding-left: 12px;
+  font-family: system-ui;
+}
+.boys-content h3 {
+  color: white;
+  padding-left: 12px;
+  font-family: system-ui;
+}
+  /* 
+/* this is the footer section */
+.footer-container {
+  font-size: 20px;
+  height: 300px;
+  width: 100%;
+  background-color:black;
+  
+}
+.footer-cant {
+  display: flex;
+  justify-content: space-evenly;
+ padding-top: 50px; 
+}
+.footer-cant1 {
+  color: aliceblue;
+  
+  margin: 10px;
+}
+.footer-cant2 {
+  color: aliceblue;
+ 
+  margin-left: 20px;
+}
+.footer-cant3 {
+  color: aliceblue;
+ text-align: center;
+  margin: 20px;
+}
+.footer-cant2 h2 {
+  padding-left: 165px;
+}
+.footer-cant3 p {
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: serif;
+  font-size: larger;
+}
+.footer-cant2 p {
+  font-family: auto;
+}
+.urger-img{
+  width: 165px;
+  height: 165px;
+  margin-right: 20px;
+}
+.urger-img img:hover{
+  width: 168px;
+  height: 168px;
+}
+.urger-img img {
+  width: 100%;
+  border-radius: 50%;
+  border: 5px solid #ffbe33;
+}
+.urger {
+  display: flex;
+  background: #222831;
+  color: white;
+  padding: 20px;
+  width: 45%;
+
+}
+.urger-content h5 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 24px;
+  margin: 0;
+}
+/* for api data section */
+.about-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-data {
+  width: 209px;
+  background-color: rgb(0, 255, 76);
+  padding: 20px;
+  margin: 10px;
+}
+
+.album {
+  width: 300px;
+  height: 150px;
+  justify-content: center;
+  
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px;
+}
+.album img{
+padding: 10px;
+}
+.user-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.user-data {
+  padding: 19px;
+  margin: 10px;
+  background: blueviolet;
+  width: 166px;
+  height: 100px;
 }

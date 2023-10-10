@@ -1,41 +1,35 @@
+import React from 'react'
 
-// import { useState } from 'react';
-import './App.css';
-// import Counter from './Counter'
-import Fcomponent from './Fcomponent';
-import Ccomponent from './Ccomponent';
-import Channel from './Channel';
-import Functionevent from './Functionevent';
-import Classevent from './Classevent';
-const App=()=> {
-  // const[count,setcount]=useState(0)
-
-  //  const incrementHandler=()=>{
-  //   setcount(count+1);
-  //  }
-  //  const decrementHandler=()=>{
-  //   if(count>0){
-  //   setcount(count-1);
-  //   }
-  //  }
-  //  const resetHandler=()=>{
-  //   setcount(0);
+import './App.css'
+import Home from './Home'
+import About from './About'
+import Service from './Service'
+import Header from './Header';
+import Footer from './Footer';
+// import Jsondata from './Jsondata'
+// import Fetchapi from './Fetchapi'
+// import Propsapidata from './Propsapidata'
+import { BrowserRouter as Router,Routes, Route } from 'react-router-dom';
+// import { formControlClasses } from '@mui/material'
+export default function App() {
+  
+  return (
+ <div className='app-container'>
    
+  <Router>
+        <Header />
+            <Routes>
+                    <Route exact path='/' element={< Home />}></Route>
+                    <Route exact path='/about' element={< About />}></Route>
+                    <Route exact path='/service' element={< Service />}></Route>
+            </Routes>
+         <Footer />
+    </Router>
 
-    return (
-    <div className="App">
-      <Fcomponent name="vikash" cast="yadav">
-        <p>hello mini</p>
-      </Fcomponent>  
-      <Fcomponent name="shashi" cast="maurya"/>
-      <Fcomponent name="akash" cast="sharma"/>
-      <Ccomponent name="savita" cast="verma"/>
-      <Channel/>
-      <Functionevent/>
-      <Classevent/>
-      {/* <Counter incrementHandler={incrementHandler} decrementHandler={decrementHandler} count={count} resetHandler={resetHandler}/> */}
-    </div>
-  );
+   {/* <Jsondata/>
+   <Fetchapi/> */}
+   {/* <Propsapidata/>  */}
+</div> 
+  )
 }
 
-export default App;
